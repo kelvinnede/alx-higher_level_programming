@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 def add_tuple(tuple_a=(), tuple_b=()):
     # Ensure the tuples have at least 2 elements using 0 for missing integers
     a = tuple_a + (0, 0)
