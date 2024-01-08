@@ -1,10 +1,10 @@
-#include "lists.h"
-#include <stddef.h>
+# include "lists.h"
+# include <stddef.h>
 
 /**
- * reverse_list - reverses a linked list
- * @head: pointer to the head of the linked list
- */
+* reverse_list - reverses a linked list
+* @head: pointer to the head of the linked list
+*/
 void reverse_list(listint_t **head)
 {
     listint_t *prev = NULL;
@@ -23,11 +23,11 @@ void reverse_list(listint_t **head)
 }
 
 /**
- * compare_lists - compares two linked lists
- * @list1: pointer to the first linked list
- * @list2: pointer to the second linked list
- * Return: 1 if lists are equal, 0 otherwise
- */
+* compare_lists - compares two linked lists
+* @list1: pointer to the first linked list
+* @list2: pointer to the second linked list
+* Return: 1 if lists are equal, 0 otherwise
+*/
 int compare_lists(listint_t *list1, listint_t *list2)
 {
     while (list1 != NULL && list2 != NULL)
