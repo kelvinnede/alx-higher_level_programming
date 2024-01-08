@@ -1,18 +1,8 @@
-#include <stdlib.h>
+#include "lists.h"
+#include <stdio.h>
 
-/**
- * struct listint_s - singly linked list
- * @n: integer
- * @next: points to the next node
- *
- * Description: singly linked list node structure
- * for Holberton project
- */
-typedef struct listint_s
-{
-    int n;
-    struct listint_s *next;
-} listint_t;
+void reverse_list(listint_t **head);
+int compare_lists(listint_t *list1, listint_t *list2);
 
 /**
  * is_palindrome - checks if a singly linked list is a palindrome
@@ -47,9 +37,6 @@ int is_palindrome(listint_t **head)
     }
 
     // Reverse the second half of the linked list
-    second_half = slow;
-    prev_slow->next = NULL; // Disconnect the first half from the second half
-
     reverse_list(&second_half);
 
     // Compare the first and second halves of the linked list
@@ -116,3 +103,4 @@ int compare_lists(listint_t *list1, listint_t *list2)
     // If both lists are empty or reached the end, they are identical
     return (list1 == NULL && list2 == NULL);
 }
+
