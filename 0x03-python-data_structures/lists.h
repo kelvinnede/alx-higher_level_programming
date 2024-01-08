@@ -1,6 +1,8 @@
 #ifndef LISTS_H
 #define LISTS_H
 
+#include <stddef.h>
+
 /**
  * struct listint_s - singly linked list
  * @n: integer
@@ -25,4 +27,3 @@ void reverse_list(listint_t **head);
 int compare_lists(listint_t *list1, listint_t *list2);
 
 #endif /* LISTS_H */
-
