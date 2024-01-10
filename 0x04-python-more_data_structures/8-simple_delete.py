@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 def simple_delete(a_dictionary, key=""):
     a_dictionary.pop(key, None)
     return a_dictionary
@@ -6,7 +7,12 @@ def simple_delete(a_dictionary, key=""):
 
 # Example usage
 if __name__ == "__main__":
-    a_dictionary = {'language': "C", 'Number': 89, 'track': "Low", 'ids': [1, 2, 3]}
+    a_dictionary = {
+        'language': "C",
+        'Number': 89,
+        'track': "Low",
+        'ids': [1, 2, 3]
+    }
 
     new_dict = simple_delete(a_dictionary, 'track')
     print_sorted_dictionary(a_dictionary)
