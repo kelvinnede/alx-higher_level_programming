@@ -32,4 +32,3 @@ int main(void)
     free(new);
     return (EXIT_SUCCESS);
 }
-
