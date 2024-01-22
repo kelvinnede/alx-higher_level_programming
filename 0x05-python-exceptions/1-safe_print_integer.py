@@ -7,6 +7,7 @@ def safe_print_integer(value):
     except (ValueError, TypeError):
         return False
 
+
 # Test the function
 if __name__ == "__main__":
     value = 89
