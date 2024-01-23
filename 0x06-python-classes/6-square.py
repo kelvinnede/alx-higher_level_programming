@@ -18,10 +18,10 @@ class Square:
             position (tuple): The position of the square. Defaults to (0, 0).
 
         Raises:
-            TypeError: If size is not an integer or if position is not a
-            tuple of 2 positive integers.
-            ValueError: If size is less than 0 or if position contains
-            non-positive integers.
+            TypeError: If size is not an integer
+            or if position is not a tuple of 2 positive integers.
+            ValueError: If size is less than 0
+            or if position contains non-positive integers.
         """
         self.size = size
         self.position = position
@@ -76,9 +76,9 @@ class Square:
         Raises:
             TypeError: If value is not a tuple of 2 positive integers.
         """
-        if not isinstance(value, tuple) \
-        or len(value) != 2 \
-        or not all(isinstance(i, int) and i >= 0 for i in value):
+        if not isinstance(value, tuple) or \
+           len(value) != 2 or \
+           not all(isinstance(i, int) and i >= 0 for i in value):
             raise TypeError("position must be a tuple of 2 positive integers")
         else:
             self.__position = value
@@ -107,3 +107,20 @@ class Square:
                 print()
             for _ in range(self.__size):
                 print(" " * self.__position[0] + "#" * self.__size)
+
+
+if __name__ == "__main__":
+    my_square_1 = Square(3)
+    my_square_1.my_print()
+
+    print("--")
+
+    my_square_2 = Square(3, (1, 1))
+    my_square_2.my_print()
+
+    print("--")
+
+    my_square_3 = Square(3, (3, 0))
+    my_square_3.my_print()
+
+    print("--")
