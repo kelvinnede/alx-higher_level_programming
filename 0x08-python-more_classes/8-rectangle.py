@@ -2,7 +2,6 @@
 """
 Module for defining a Rectangle class.
 """
-
 class Rectangle:
     """Define a rectangle"""
 
