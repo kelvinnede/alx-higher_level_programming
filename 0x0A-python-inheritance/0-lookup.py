@@ -23,6 +23,6 @@ if __name__ == "__main__":
         def my_meth(self):
             pass
 
-print(lookup(MyClass1))
-print(lookup(MyClass2))
-print(lookup(int))
+    print(lookup(MyClass1))
+    print(lookup(MyClass2))
+    print(lookup(int))
