@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+Module for computing metrics from stdin.
+"""
 
 import sys
 
