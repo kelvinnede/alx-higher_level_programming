@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+"""
+Module for appending lines to a file after specific strings.
+"""
+
 
 def append_after(filename="", search_string="", new_string=""):
     """
