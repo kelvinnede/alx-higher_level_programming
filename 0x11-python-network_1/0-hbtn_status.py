@@ -1,13 +1,11 @@
 #!/usr/bin/python3
-"""Python script that fetches https://intranet.hbtn.io/status."""
-from urllib.request import Request, urlopen
-
+import urllib.request
 
 if __name__ == "__main__":
-    req = Request("https://alx-intranet.hbtn.io/status")
-    with urlopen(req) as response:
-        body = response.read()
+    url = 'https://alx-intranet.hbtn.io/status'
+    with urllib.request.urlopen(url) as response:
+        html_content = response.read()
         print("Body response:")
-        print("\t- type: {}".format(type(body)))
-        print("\t- content: {}".format(body))
-        print("\t- utf8 content: {}".format(body.decode("utf-8")))
+        print("\t- type:", type(html_content))
+        print("\t- content:", html_content)
+        print("\t- utf8 content:", html_content.decode('utf-8'))
